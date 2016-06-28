@@ -18,7 +18,7 @@ public class MoviesCreateTable
     public static void main(String[] args) throws Exception
     {
 
-        AmazonDynamoDBClient client = new AmazonDynamoDBClient().withEndpoint("https://dynamodb.us-west-2.amazonaws.com").withRegion(Regions
+        AmazonDynamoDBClient client = new AmazonDynamoDBClient().withEndpoint("https://localhost:9999").withRegion(Regions
                 .US_WEST_2);
 
         DynamoDB dynamoDB = new DynamoDB(client);
